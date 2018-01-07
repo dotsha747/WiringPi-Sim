@@ -35,7 +35,7 @@ LIBS= $(LNAME)
 LDOPTS=$(patsubst %, -l%, $(LIBS))
 
 LIBSRCS=$(wildcard src/libwiringPi/*.c)
-LIBOBJS=$(patsubst %.cpp,%.lo, $(LIBSRCS))
+LIBOBJS=$(patsubst %.c,%.lo, $(LIBSRCS))
 
 
 #TESTSRCS=$(wildcard src/test/*.cpp)

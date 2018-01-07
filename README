@@ -1,9 +1,16 @@
 *** A Dummy Wiring-Pi Library ***
 
+WiringPi is an excellent library for accessing GPIO and other hardware on the
+Raspberry Pi, written by Gordon Henderson (http://wiringpi.com). When using it
+I often would like to compile and test my program on my desktop ubuntu system, 
+before finally porting it to the Pi. Unfortunately, there is no wiringPi library
+in Ubuntu. 
+
 I built this simple library of stubs, so I could compile my Raspberry Pi programs
-on Ubuntu. The wiringPi methods just no-op stubs, and do nothing, but it does
+on Ubuntu. The wiringPi methods are just no-op stubs, and do nothing, but it does
 allow the program to compile. Only the core library functions exist at the moment.
 
 I might expand it in the future to actually simulate the real GPIO pin behaviour,
-and have some UI that can toggle simulated switches and so on. But for now all
+and have some UI that can toggle simulated switches and so on. Or maybe have it
+talk over the network to a Pi and interact with the real GPIO. But for now all
 I need is this stub library. 8-)
