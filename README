@@ -1,0 +1,9 @@
+*** A Dummy Wiring-Pi Library ***
+
+I built this simple library of stubs, so I could compile my Raspberry Pi programs
+on Ubuntu. The wiringPi methods just no-op stubs, and do nothing, but it does
+allow the program to compile. Only the core library functions exist at the moment.
+
+I might expand it in the future to actually simulate the real GPIO pin behaviour,
+and have some UI that can toggle simulated switches and so on. But for now all
+I need is this stub library. 8-)
