@@ -65,7 +65,7 @@ extern "C" {
 #define INT_EDGE_RISING         2
 #define INT_EDGE_BOTH           3
 
-/* function prototypes */
+/* core function prototypes */
 
 int wiringPiSetup (void);
 
@@ -88,6 +88,17 @@ int digitalRead (int pin);
 int analogRead (int pin);
 
 void analogWrite (int pin, int value);
+
+/* timing function prototypes */
+
+unsigned int millis (void);
+
+unsigned int micros (void);
+
+void delay (unsigned int howLong);
+
+void delayMicroseconds (unsigned int howLong);
+
 
 
 #ifdef __cplusplus

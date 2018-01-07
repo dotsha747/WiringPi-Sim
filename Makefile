@@ -30,7 +30,7 @@ LNAME=$(shell echo $(LIBNAME)|sed -e 's/^lib//')
 PREFIX=$(DESTDIR)/usr
 CC=gcc
 AR=ar
-CFLAGS= -I src/libsrc -O3 
+CFLAGS= -I src/libsrc -O3 -g
 LIBS= $(LNAME) 
 LDOPTS=$(patsubst %, -l%, $(LIBS))
 
