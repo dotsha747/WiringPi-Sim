@@ -19,7 +19,8 @@ sed -i -e "s/\${PACKAGE}/${PACKAGE}/" debian/control
 sed -i -e "s/\${MAJORVERSION}/${MAJORVERSION}/" debian/control
 
 # substitute variables into the contents of the .install files
-for dotinstall in debian/control debian/*install ; do
+#for dotinstall in debian/control debian/*install ; do
+for dotinstall in debian/control ; do
 	sed -i 	-e "s/\${PACKAGE}/${PACKAGE}/" \
 					-e "s/\${LIBNAME}/${LIBNAME}/" \
 					-e "s/\${MAJORVERSION}/${MAJORVERSION}/" \

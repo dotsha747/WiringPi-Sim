@@ -1,11 +1,11 @@
-Source: ${PACKAGE}${MAJORVERSION}
+Source: ${PACKAGE}
 Maintainer: shahada abubakar <shahada@abubakar.net>
 Section: misc
 Priority: optional
 Standards-Version : 3.9.2
 Build-Depends: debhelper (>= 9)
 
-Package: ${PACKAGE}${MAJORVERSION}
+Package: ${PACKAGE}
 Architecture: ${ARCH}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Dummy WiringPi Library
