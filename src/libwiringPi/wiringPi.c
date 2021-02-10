@@ -128,7 +128,7 @@ unsigned int micros(void) {
 
 void delay(unsigned int howLongMillis) {
 
-	usleep (howLongMillis / 1000);
+	usleep (howLongMillis * 1000);
 }
 
 
